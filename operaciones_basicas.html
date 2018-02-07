@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <title>Operaciones en JS</title>
+    </head>
+    <body>
+        <h1>Operaciones en JS</h1>
+        <h3>Operaciones básicas utilizando Javascript</h3>
+        <script>
+            var opc= parseInt(prompt("Elije la operación a realizar: \n1.Suma\n2.Resta\n3.Multiplicación\n4.División"));
+            var x= parseInt(prompt("Ingresa Valor 1"));
+            var y= parseInt(prompt("Ingresa Valor 2"));
+            var operacion="";
+            var resultado=0;
+
+            switch(opc){
+                case 1:
+                    var operacion="SUMA";
+                    resultado=parseInt(x+y);
+                break;
+                case 2:
+                    var operacion="RESTA";
+                    resultado=parseInt(x-y);
+                break;
+                case 3:
+                    var operacion="MULTIPLICACIÓN";
+                    resultado=parseInt(x*y);
+                break;
+                case 4:
+                    var operacion="DIVISIÓN";
+                    if(y==0){
+                        document.write("ERROR: No puedes dividir entre CERO");
+                    }else{
+                        resultado=parseInt(x/y);
+                    }
+                break;
+            }
+            document.write("El resultado de la "+operacion+" es: "+resultado);
+        </script>
+    </body>
+</html>
