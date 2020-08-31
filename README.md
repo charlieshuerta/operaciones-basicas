@@ -4,4 +4,5 @@ Permite realizar las operaciones básicas:
 - Resta
 - Multiplicación
 - División
-Tomando en cuenta que solo se permite el calculo con 2 variables
+
+Hay que tomar en cuenta que solo se permite el calculo con 2 variables
